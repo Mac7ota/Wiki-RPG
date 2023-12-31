@@ -1,0 +1,90 @@
+.equipamentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    place-items: center;
+    justify-items: center;
+    padding: 40px 80px;
+    flex-wrap: wrap;
+    gap: 50px 10px;
+    
+    margin: 10px 50px;
+    
+}
+#decoracao {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.config{
+    width: 300px;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color:white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.config:hover{
+    border: 1px solid black ;
+    border-radius: 25px;
+}
+
+#texto-config {
+    font-size: 25px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#escrita {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    padding: 10px 10px;
+}
+
+@media only screen and (max-width: 1375px) {
+    .equipamentos{
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .equipamentos{
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+    
+
+@media only screen and (max-width: 900px) {
+    .equipamentos{
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      margin: 0px; 
+      border: 0px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .equipamentos,
+    .config{
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      margin-left: 0px;;
+      };
+      #escrita{
+        width: 100%;
+      height: 100%;
+      }
+
+    
+  }

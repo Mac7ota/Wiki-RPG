@@ -1,0 +1,85 @@
+@import "reinos.scss", "imagens.scss", "items.scss";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.logoNavBar{
+    width: 60px;
+    height: 60px;
+}
+
+.container{
+    padding-bottom: 30px;
+}
+
+.header{
+    width: 100%;
+    min-height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 8px 15px;
+}
+
+.headerBtnGroup{
+    display: flex;
+    gap: 15px;
+}
+
+.navBtn{
+    font-size: 16px;
+    padding: 6px;
+    background-color: black;
+    border: 2px solid transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 60px;
+    text-align: center;
+}
+
+.navBtn:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.titulo{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+#texto1{
+    align-items: center;
+}
+
+#basico {
+    color: rgb(31, 29, 29);
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+#tabela{
+    border: 0px;
+       display: flex;
+       justify-content: center;
+}
+
+@media(max-width:463px){
+    .header{
+        justify-content: center;
+    }
+}
